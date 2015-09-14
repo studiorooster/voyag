@@ -1,0 +1,536 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+$bgDefault: #2ea3f2;
+$bgHighlight: #85c8f6;
+$colDefault: #ffffff;
+$colHighlight: #ffffff;
+$dropDown: false;
+$orange: rgba(253, 197, 59, 1);
+$white: #ffffff;
+$grey: #6d6e71;
+$brown: #231208;
+$blue: #7897A9;
+$light_blue: rgba(120, 151, 168, .8);
+$purple: #630B09;
+$green: #5A6731;
+$titanium: #363636;
+
+/* -- Colors -- */
+.light-grey {
+  color: #bcbec0
+}
+
+.dark-grey {
+  color: #6d6e71
+}
+
+.green {
+  color: #5A6731
+}
+
+.blue {
+  color: rgba(32, 152, 213, 1)
+}
+
+.blue-50 {
+  color: rgba(32, 152, 213, 0.5)
+}
+
+.orange {
+  color: rgba(253, 197, 59, 1)
+}
+
+.brown {
+  color: #231208
+}
+
+.orange-50 {
+  color: rgba(253, 197, 59, 0.5)
+}
+
+.purple {
+  color: #630B09
+}
+
+/* -- Font Styles -- */
+body {
+  font-family: pragmatica-web, san-serif;
+  padding-bottom: 0 !important;
+}
+
+h1, h2, h3, h4 {
+  font-family: trajan-pro-3;
+}
+
+h1 {
+  color: $white
+}
+
+h2 {
+  color: $orange
+}
+
+h3 {
+  color: $blue
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #666666;
+}
+
+ol {
+  list-style: none;
+}
+
+ol li {
+  padding-bottom: 10px;
+}
+
+ol.withroman {
+  list-style-type: lower-roman
+}
+
+ol.withroman li {
+  padding-bottom: 10px
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+/* -- Header Area -- */
+
+.header {
+  padding-bottom: 10px
+}
+
+.banner {
+  .home-banner {
+    padding-top: 60px;
+    height: 350px;
+    background: url("../images/discover.jpg") no-repeat;
+  }
+  .relationship-banner {
+    padding-top: 60px;
+    height: 350px;
+    background: url("../images/relationship.jpg") no-repeat;
+  }
+  .financial-banner {
+    padding-top: 60px;
+    height: 350px;
+    background: url("../images/money.jpg") no-repeat;
+  }
+  .physical-banner {
+    padding-top: 60px;
+    height: 350px;
+    background: url("../images/running.jpg") no-repeat;
+  }
+  .spiritual-banner {
+    padding-top: 60px;
+    height: 350px;
+    background: url("../images/freedom-field.jpg") no-repeat;
+  }
+  .mentally-banner {
+    padding-top: 60px;
+    height: 350px;
+    background: url("../images/golden-girl.jpg") no-repeat;
+  }
+  .values-banner {
+    padding-top: 60px;
+    height: 350px;
+    background: url("../images/values.jpg") no-repeat;
+  }
+  .faith-banner {
+    padding-top: 60px;
+    height: 350px;
+    background: url("../images/faith.jpg") no-repeat;
+  }
+  .team-banner {
+    padding-top: 60px;
+    height: 350px;
+    background: url("../images/team.jpg") no-repeat;
+  }
+  .integrative-banner {
+    padding-top: 60px;
+    height: 350px;
+    background: url("../images/integrative.jpg") no-repeat;
+  }
+  .contact-banner {
+    padding-top: 60px;
+    height: 350px;
+    background: url("../images/contact-us.jpg") no-repeat;
+  }
+  .banner-header-left {
+    position: relative;
+    top: 128px;
+    h1 {
+      font-size: 500%;
+      color: #fff;
+      position: relative;
+      top: 45px
+    }
+  }
+  .header-passage {
+    font-weight: inherit;
+    font-size: 18px;
+    letter-spacing: 1px;
+    /*background: rgba(0,0,0,.1);
+    padding: 10px;
+    border-radius: 8px*/
+  }
+}
+
+.body-copy {
+  padding-bottom: 20px;
+  p {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .discover {
+    color: $orange;
+    font-style: italic;
+    text-align: right;
+    font-size: 18px;
+  }
+}
+
+.header-slogan {
+  position: relative;
+  bottom: -70px;
+  text-align: right;
+  padding-right: 1px;
+  h1 {
+    font-size: 200%
+  }
+}
+
+.headline {
+  padding: 10px 0 20px 0
+}
+
+.banner-link-outer {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  background: $orange;
+  .title {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    padding-left: 10px;
+    color: $white;
+    background: url("../images/right-arrow.png") no-repeat 98% 45%;
+    background-size: 30px;
+    p {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+  .right-link {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    background: $white;
+    opacity: .5;
+    p {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+/* -- Home Page -- */
+
+.block {
+  .col-md-2 {
+    height: 225px;
+    margin-bottom: 10px;
+    padding: 0;
+    margin-left: 5px;
+    background-position: top;
+    background-size: cover;
+    .link-outer {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: -5px;
+      margin-left: 5px;
+      height: 30px;
+      .title {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 70%;
+        padding-left: 10px;
+        color: $white;
+        background: url("../images/right-arrow.png") no-repeat 98% 45%;
+        background-size: 30px;
+        p {
+          position: relative;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+      .right-link {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 30%;
+        text-align: center;
+        background: $white;
+        opacity: .5;
+        p {
+          position: relative;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+.spi {
+  background: $brown;
+}
+
+.rel {
+  background: $blue;
+}
+
+.phy {
+  background: $purple;
+}
+
+.fin {
+  background: $green;
+}
+
+.men {
+  background: $orange;
+}
+
+.spi-back {
+  background: url("../images/freedom-field-small.jpg");
+}
+
+.rel-back {
+  background: url("../images/relationship-small.jpg");
+}
+
+.phy-back {
+  background: url("../images/running-small.jpg");
+}
+
+.fin-back {
+  background: url("../images/money-small.jpg");
+}
+
+.men-back {
+  background: url("../images/golden-girl-small.jpg");
+}
+
+.bios {
+  .name {
+    font-family: trajan-pro-3;
+    color: $blue
+  }
+  .title {
+    font-family: trajan-pro-3;
+    padding-bottom: 10px;
+    display: block;
+    color: $blue
+  }
+}
+
+/* -- Sidebar -- */
+.sidebar {
+  margin-top: 20px;
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      text-align: right;
+    }
+  }
+}
+
+/* -- Nav Area -- */
+
+.dropdown-menu {
+  left: 2px;
+  border: none
+}
+
+#navbar {
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  border: none !important;
+  border-radius: 0;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  background: $bgDefault;
+  line-height: 10px;
+  margin-left: 2px;
+  padding: 15px 63px
+}
+
+.navbar-default {
+  .navbar-brand {
+    color: $colDefault;
+    &:hover, &:focus {
+      color: $colHighlight;
+    }
+  }
+  .navbar-text {
+    color: $colDefault;
+  }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $colDefault;
+        &:hover, &:focus {
+          background: $bgDefault;
+          color: $colHighlight;
+        }
+      }
+      @if $dropDown {
+        > .dropdown-menu {
+          background-color: $bgDefault;
+          > li > a {
+            color: $colDefault;
+            &:hover, &:focus {
+              color: $colHighlight;
+              background-color: $bgHighlight;
+            }
+          }
+          .divider {
+            background-color: $bgHighlight;
+          }
+        }
+      }
+    }
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight;
+      }
+    }
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight;
+      }
+    }
+  }
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight;
+    }
+    .icon-bar {
+      background-color: $colDefault;
+    }
+  }
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $colDefault;
+  }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      &:hover, &:focus {
+        color: $colHighlight;
+      }
+    }
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight;
+      }
+    }
+  }
+  .navbar-default .navbar-collapse {
+    border: none;
+    background: $bgDefault;
+  }
+  .navbar-header {
+    background: $bgDefault;
+  }
+  .spi-back {
+    background: url("../images/freedom-field.jpg");
+  }
+  .rel-back {
+    background: url("../images/relationship.jpg");
+  }
+  .phy-back {
+    background: url("../images/running.jpg");
+  }
+  .fin-back {
+    background: url("../images/money.jpg");
+  }
+  .men-back {
+    background: url("../images/golden-girl.jpg");
+  }
+}
+
+.footer {
+  background: $titanium;
+  margin-top: 40px;
+  min-height: 155px;
+  padding-top: 20px;
+  font-size: 98%;
+  .title {
+    font-weight: bold;
+    color: $blue;
+  }
+  img {
+    width: 100px;
+    padding-bottom: 20px;
+  }
+  p {
+    color: $light_blue
+  }
+}
