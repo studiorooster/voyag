@@ -1,75 +1,74 @@
 <section class="container banner hidden-xs hidden-sm">
-    <div class="col-md-12 contact-banner"></div>
+  <div class="col-md-12 contact-banner"></div>
 </section>
 
 <section class="container" style="padding-top:25px">
-    <div class="col-md-4">
-        <h1 class="hidden-xs hidden-sm">
-            <span class="orange">Call</span><span class="blue"> 1.855.55VOYAG</span><br><span class="orange">to learn more</span>
-        </h1>
+  <div class="col-md-4">
+    <h1 class="hidden-xs hidden-sm">
+      <span class="orange">Call</span><span class="blue"> 855.558.6924</span><br><span
+        class="orange">to learn more</span>
+    </h1>
 
-        <h1 class="hidden-md hidden-lg">
-            <span class="blue"><a href="tel:+18555586925">1 (855) 558-6925</a></span>
-        </h1>
+    <h1 class="hidden-md hidden-lg">
+      <span class="blue"><a href="tel:+18555586925">1 (855) 558-6924</a></span>
+    </h1>
+  </div>
+  <div class="col-md-8">
+    <div class="contact-form">
+      <h2>Contact Form</h2>
+
+      <p>We would love to hear from you. Please give us a call or send us an email with this simple contact form. We return all submissions within one business day.</p>
+
+      <form name="contactform" method="post" action="send_form_email.php">
+        <fieldset>
+          <div class="control-group">
+            <div class="controls">
+              <input type="text" class="form-control input-sm" placeholder="First Name" id="name"
+                     name="first_name" required/>
+
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <p></p>
+
+          <div class="control-group">
+            <div class="controls">
+              <input type="text" class="form-control input-sm" placeholder="Last Name" id="name"
+                     name="last_name" required/>
+
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <input type="email" class="form-control input-sm" placeholder="Email" id="email"
+                     name="email" required/>
+            </div>
+          </div>
+          <p></p>
+
+          <div class="control-group">
+            <div class="controls">
+              <input type="text" class="form-control input-sm" placeholder="Phone" id="telephone"
+                     name="telephone" required/>
+            </div>
+          </div>
+          <p></p>
+
+          <div class="control-group">
+            <div class="controls">
+              <textarea rows="3" cols="100" class="form-control input-sm" id="comments" name="comments" required
+                        maxlength="999" style="resize:none" placeholder="Question or Comment">
+              </textarea>
+            </div>
+          </div>
+          <div id="success"></div>
+          <!-- For success/fail messages -->
+          <p></p>
+          <button id="submit" name="submit" class="btn btn-success">Send</button>
+          <br/>
+        </fieldset>
+      </form>
     </div>
-    <div class="col-md-8">
-        <div class="contact-form">
-            <h2>Contact Form</h2>
-
-            <p>We would love to hear from you. Please give us a call or send us an email with this simple contact form.
-                We return all submissions within one business day.
-            </p>
-
-            <form name="contactform" method="post" action="send_form_email.php">
-                <fieldset>
-                    <div class="control-group">
-                        <div class="controls">
-                            <input type="text" class="form-control input-sm" placeholder="First Name" id="name"
-                                   name="first_name" required/>
-
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <p></p>
-
-                    <div class="control-group">
-                        <div class="controls">
-                            <input type="text" class="form-control input-sm" placeholder="Last Name" id="name"
-                                   name="last_name" required/>
-
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            <input type="email" class="form-control input-sm" placeholder="Email" id="email"
-                                   name="email" required/>
-                        </div>
-                    </div>
-                    <p></p>
-
-                    <div class="control-group">
-                        <div class="controls">
-                            <input type="text" class="form-control input-sm" placeholder="Phone" id="telephone"
-                                   name="telephone" required/>
-                        </div>
-                    </div>
-                    <p></p>
-
-                    <div class="control-group">
-                        <div class="controls">
-                <textarea rows="3" cols="100" class="form-control input-sm" id="comments" name="comments" required
-                          maxlength="999" style="resize:none" placeholder="Question or Comment">
-                </textarea>
-                        </div>
-                    </div>
-                    <div id="success"></div>
-                    <!-- For success/fail messages -->
-                    <p></p>
-                    <button id="submit" name="submit" class="btn btn-success">Send</button>
-                    <br/>
-                </fieldset>
-            </form>
-        </div>
-    </div>
+  </div>
 </section>

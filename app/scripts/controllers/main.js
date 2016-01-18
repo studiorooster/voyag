@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('voyagApp')
-  .controller('MainController', function ($scope, $location) {
-        $scope.isActive = function (viewLocation) {
-            return viewLocation === $location.path();
-        };
-  });
+    .controller('MainController', function ($scope, $location) {
+      $scope.isActive = function (viewLocation) {
+        return viewLocation === $location.path();
+      };
+    });
